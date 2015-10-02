@@ -53,10 +53,10 @@ public class Main {
             reader = new FileReader(fileName);
             Person newPerson = new Gson().fromJson(reader, Person.class);
 
-            System.out.println(newPerson.getFirstName());
-            System.out.println(newPerson.getLastName());
-            System.out.println(newPerson.getEmail());
-            System.out.println(newPerson.getAge());
+            System.out.println("first name: " + newPerson.getFirstName());
+            System.out.println("last name: " + newPerson.getLastName());
+            System.out.println("email: " + newPerson.getEmail());
+            System.out.println("age: " + newPerson.getAge());
         }
         catch (FileNotFoundException e)
         {
