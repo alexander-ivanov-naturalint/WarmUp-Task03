@@ -30,7 +30,6 @@ public class Main {
         {
             writer = new PrintWriter(fileName);
             writer.print(json);
-            writer.close();
         }
         catch (IOException e)
         {
